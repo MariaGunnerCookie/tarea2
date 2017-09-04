@@ -1,0 +1,98 @@
+<html>
+<head>
+<title>Operaciones Basicas</title>
+<script>
+
+
+suma(numero1, numero2)
+resta(numero1, numero2)
+multiplicacion(numero1, numero2)
+division(numero1, numero2)
+
+
+
+function suma(numero1, numero2)
+{
+	var resultado = Number(numero1) + Number(numero2);
+	alert(resultado);
+}
+
+
+
+function resta(numero1, numero2)
+{
+	var resultado = Number(numero1) - Number(numero2);
+	alert(resultado);
+}
+
+
+function multiplicacion(numero1, numero2)
+{
+	var resultado = Number(numero1) * Number(numero2);
+	alert(resultado);
+}
+
+
+
+function division(numero1, numero2)
+{
+	var resultado = Number(numero1) / Number(numero2);
+	alert(resultado);
+}
+
+</script>
+</head>
+
+
+<body>
+
+	<div>
+
+<center> <h1>
+     <label> operaciones Basicas </label> 
+    </h1> </center>
+	
+
+<center>
+
+    <p></p>
+<label> numero1 </label>
+    <input id= "numero1" type = "text" / >
+
+<label> numero2 </label>
+    <input id= "numero2" type = "text" / >
+    
+    
+    <input type = "button" onclick="suma(document.getElementById('numero1').value,document.getElementById('numero2').value);" value="suma"/>
+ 
+
+    <input type = "button" onclick="resta(document.getElementById('numero1').value,document.getElementById('numero2').value);" value="resta"/>
+
+
+   
+    <input type = "button" onclick="multiplicacion(document.getElementById('numero1').value,document.getElementById('numero2').value);" value="multiplicacion"/>
+
+
+
+    <input type = "button" onclick="division(document.getElementById('numero1').value,document.getElementById('numero2').value);" value="division"/>
+      <p>
+    	
+    </p>
+</center>
+
+
+
+
+
+
+
+
+
+
+
+	</div> 
+<form>
+
+</form>
+</body>
+</html>
