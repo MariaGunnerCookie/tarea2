@@ -3,40 +3,31 @@
 <title>valores</title>
 <script type="text/javascript">
 
+var nombres = new array();
 
-var mostrar;
+var valores = new array();
 
-var agregar;
+function agregar()
+{
+  var v1 = document.valores.agregar.value;
+  var v2 = document.valores.agregar.value;
+  nombre.push(v1);
+  alert(nombres.length);
 
-  agregar= [3];
+}
+function  mostrar()
+{
+  for (var i = 0; i < nombres.length; i++) {
+    document.getElementBy('mostrarr').innerHTML += nombres[i];
+    document.getElementBy('mostrarx').innerHTML += nombres[i];
+  }
 
 
-   for(int i=0; i<=agregar; i++)
-   {
+}
 
-     if(agregar[i]= 0)
-     {
-        mostrar=agregar[i];
-     }
-      else
-           if(agregar[i]= 1)
-     {
-        mostrar=agregar[i];
-     }
 
-        if(agregar[i]= 2)
-     {
-        mostrar=agregar[i];
-     }
 
-        if(agregar[i]= 3)
-     {
-        mostrar=agregar[i];
-     }
 
-   }
-
-     alert(mostrar)
 
 
 
@@ -49,21 +40,22 @@ var agregar;
                
          <p></p>
 <label> Nombre </label>
-    <input id= "numero1" type = "text" / >
+    <input id= "agregar" type = "text" / >
 
            <p></p>
 <label> valor </label>
-    <input id= "numero1" type = "text" / >    
+    <input id= "mostrar" type = "text" / >  
 
-                
-    <input type = "button" onclick= "agregar(document.getElementById('mostrar').value);" value= "agregar"/>
-
-
-    <input type = "button" onclick= "mostar(document.getElementById('mostrar').value);" value= "mostrar"/>
-
-
+    <body>
+<div id="main">
+<input type="button" id="btagregar" value="agregar" class="bt" />
+<input type="button" id="btmostar" value="mostrar" class="bt" />
+<br />
 
 
+</div>
+</body>
+  
 
 
 

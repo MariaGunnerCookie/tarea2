@@ -1,89 +1,29 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>Listbok</title>
-
-
-<script language="javascript" type="text/javascript">
-          var i = 0;
-    function agregar() {
-       var v = document.form1.txtValue.value;
-       // get the TextBox Value and assign it into the variable
-       AddOpt = new Option(v, v);
-       document.form1.lstValue.options[i++] = AddOpt;
-       return true;
-    }
-
-
-      function mostrar() {
-       var s = 1;
-       var Index;
-       if (document.form1.lstValue.selectedIndex == -1) {
-          alert("Please select any item from the ListBox");
-          return true;
-       }
-       while (s > 0) {
-           Index = document.form1.lstValue.selectedIndex;
-           if (Index >= 0) {
-                document.form1.lstValue.options[Index] = null;
-                 --i;
-           }
-           else
-              s = 0;
-       }
-       return true;
-   }
-
-
-
-</script>
-  <header>
-     <div>
-
-            
-<input name="txtValue" type="text" />
-
- <select name="lstValue" multiple>
-<option value="empty"></select>   
-<input type="button" name="agregar" value="agregar" onclick="agregar();" />
-<input type="button" name="mostar" value="mostrar" onclick="mostrar();" />
-
-
-
-
-                
-  <!-- <input type = "button" onclick= "agregar(document.getElementById('mostrar').value);" value= "agregar"/>
-
-
-    <input type = "button" onclick= "mostar(document.getElementById('mostrar').value);" value= "mostrar"/>-->
-
-
-
-
-
-
-
-        </select>
-
-
-
-      </div> 
-</header>
-
-
-
+    <meta charset="utf-8">
+   <body>
+                        <input type="text" class ="form-control">
+                       <INPUT TYPE="button" VALUE="Añadir" NAME=butAddWed 
+   onclick="butAddWed_onclick()">
 </head>
-
-
 <body>
+<FORM NAME=form1>
+<SELECT NAME=theDay SIZE=5>
+   <OPTION VALUE=0 SELECTED>valor
+   <OPTION VALUE=1>valor1
+   <OPTION VALUE=2>valor2
+   <OPTION VALUE=3>valor3
+   <OPTION VALUE=4>valor4
+   <OPTION VALUE=5>valor5
+   <OPTION VALUE=6>valor6
+</SELECT>
+<BR>
 
-	<div>
 
 
 
 
-	</div> 
-<form>
 
-</form>
 </body>
 </html>
